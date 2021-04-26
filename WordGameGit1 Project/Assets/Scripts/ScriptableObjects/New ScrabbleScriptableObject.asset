@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bfab5c2865c67418f08d442b1d4445, type: 3}
+  m_Name: New ScrabbleScriptableObject
+  m_EditorClassIdentifier: 
+  lettersInputListContainer:
+  - CBPJQPJWUXLFEIO
+  - DFWRDQPDSGVELUK
+  - YVUSWWKAIGXNAKY
+  - LAHIJYHLEHPHPDY
+  - DJQIWNKYEVBPBTP
+  - HDEABWPKLKVJRTO
+  - IXSFHXRCETESJND
+  - QUSNFBNDBSAMADI
+  - BKNARUNVVJKCNAG
+  - LOHXLOBYGUAYQPR
+  - FWBXPUPIXJTOTLV
+  - GSMDUNDANMBNIVF
+  - UYCVBIBEIOWSXHP
+  - KDWYTNHAFCSMENS
+  - APNSTSRRUOEJTBX
+  alphabetArray:
+  - A
+  - B
+  - C
+  - D
+  - E
+  - F
+  - G
+  - H
+  - I
+  - J
+  - K
+  - L
+  - M
+  - N
+  - O
+  - P
+  - Q
+  - R
+  - S
+  - T
+  - U
+  - V
+  - W
+  - X
+  - Y
+  - Z
+  randomizedLettersArray:
+  - A
+  - P
+  - N
+  - S
+  - T
+  - S
+  - R
+  - R
+  - U
+  - O
+  - E
+  - J
+  - T
+  - B
+  - X
+  randomizedLetterString: APNSTSRRUOEJTBX
+  yAxisLength: 15
