@@ -13,17 +13,19 @@ public class AudioButton : MonoBehaviour
 
     private void Awake()
     {
-        
+        //DontDestroyOnLoad(this.gameObject);
         if (buttonImage == null)
         {
             buttonImage = GameObject.FindGameObjectWithTag("AudioButton").GetComponent<Image>();
         }
+
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        AudioListener.volume = 0;
         buttonImage.gameObject.GetComponent<Button>().onClick.AddListener(OnClickAudioButton);
     }
 
@@ -55,14 +57,16 @@ public class AudioButton : MonoBehaviour
         if(audioON == false)
         {
             buttonImage.sprite = audioOnIMG;
-            cameraGO.GetComponent<AudioListener>().enabled = true;
+            //cameraGO.GetComponent<AudioListener>().enabled = true;           
+            AudioListener.volume = 1;
             audioON = true;
 
         }
         else if (audioON == true)
         {
             buttonImage.sprite = audioOffIMG;
-            cameraGO.GetComponent<AudioListener>().enabled = false;
+            //cameraGO.GetComponent<AudioListener>().enabled = false;
+            AudioListener.volume = 0;
             audioON = false;
         }
 
